@@ -1,0 +1,24 @@
+.Menu {
+	display: flex;
+	grid-area: menu;
+}
+
+.BurgerIcon {
+	width: 20px;
+	height: 20px;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	margin-right: 10px;
+}
+
+.BurgerIcon span {
+	width: 100%;
+	height: 4px;
+	background: salmon;
+}
+
+.MenuText {
+	margin: 0;
+	padding: 0;
+}

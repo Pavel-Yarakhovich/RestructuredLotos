@@ -1,0 +1,38 @@
+.Container {
+	position: relative;
+	align-self: flex-start;
+}
+
+.Rectangle {
+	height: 30px;
+	padding: 10px;
+	padding-left: 40px;
+	box-sizing: border-box;
+	border-radius: 15px;
+	background: linear-gradient(rgb(255, 107, 91), rgb(255, 79, 246));
+	min-width: 120px;
+	display: flex;
+	align-items: center;
+	box-shadow: 2px 2px 5px 0 rgb(184, 80, 80);
+	font-size: .8rem;
+	font-weight: 500;
+	color: #fff;
+}
+
+.Circle {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background: linear-gradient(rgb(255, 71, 50), rgb(255, 184, 251));
+	box-shadow: 2px 2px 5px 0 rgb(184, 80, 80);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #fff;
+}

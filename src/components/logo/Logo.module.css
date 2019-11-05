@@ -1,0 +1,23 @@
+.LogoContainer {
+	display: flex;
+	grid-area: logo;
+}
+
+.Logo {
+	align-self: center;
+	width: 54px;
+	height: 36px;
+	background: url(../../assets/img/lotos-img.png) no-repeat 50% 50%;
+	background-size: contain;
+}
+
+@media screen and (max-width: 780px) {
+	.LogoContainer {
+		justify-content: center;
+	}
+	.Logo {
+		width: 40px;
+		height: 28px;
+		align-self: flex-start;
+	}
+}

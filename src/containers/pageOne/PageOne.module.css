@@ -1,0 +1,46 @@
+.Page {
+	display: flex;
+	justify-content: center;
+	grid-area: page;
+}
+
+.Img {
+	flex-basis: 50%;
+	flex-shrink: 0;
+	background: url(../../assets/img/img-1.png) no-repeat 90% 50%;
+	background-size: contain;
+}
+
+.PageContent {
+	flex-basis: 50%;
+	flex-shrink: 0;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+.PageContent h1 {
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	font-size: 8.5rem;
+	line-height: 1.1;
+	font-weight: 700;
+	color: salmon;
+}
+
+.PageContent p {
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+
+@media screen and (max-width: 780px) {
+	.Page {
+		flex-flow: row-reverse;
+		overflow-x: visible;
+	}
+	.Img {
+		transform: scaleX(-1);
+		background-position-x: -85%;
+		overflow-x: visible;
+	}
+}

@@ -1,0 +1,58 @@
+.LinkContainer {
+	display: flex;
+	flex-flow: row-reverse;
+	align-items: center;
+	padding-right: 40px;
+	grid-area: next;
+	position: relative;
+	text-decoration: none;
+	color: #000;
+	margin: 0;
+	font-size: .8rem;
+}
+
+.LinkContainer::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: linear-gradient(salmon, orange);
+	right: 0;
+	bottom: 0;
+	box-shadow: 2px 2px 4px 0 #666;
+}
+
+.LinkContainer:hover::before {
+	box-shadow: 0 0 10px 0 rgb(0, 17, 252);
+}
+
+.LinkContainer:active::before {
+	box-shadow: inset 2px 2px 3px 0 #666;
+}
+
+.LinkContainer::after {
+	content: '';
+	display: block;
+	position: absolute;
+	border: 6px solid #fff;
+	right: 9px;
+	bottom: 11px;
+	border-bottom: none;
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+
+@media screen and (max-width: 780px) {
+	.LinkContainer {
+		padding-left: 40px;
+		padding-right: 0;
+	}
+	.LinkContainer::before {
+		left: 0;
+	}
+	.LinkContainer::after {
+		right: 180px;
+	}
+}

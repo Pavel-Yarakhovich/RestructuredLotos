@@ -1,0 +1,25 @@
+.PageTitle {
+	margin: 0;
+	padding: 0 0 0 10px;
+	position: relative;
+	grid-area: pageTitle;
+}
+
+.PageTitle::before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: salmon;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@media screen and (max-width: 780px) {
+	.PageTitle {
+		display: none;
+	}
+}

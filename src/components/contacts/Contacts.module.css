@@ -1,0 +1,9 @@
+.Contacts {
+	color: #000;
+	text-decoration: none;
+	text-align: right;
+	overflow-x: visible;
+	grid-area: contacts;
+	font-size: 1rem;
+	white-space: nowrap;
+}

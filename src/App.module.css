@@ -1,0 +1,21 @@
+.App {
+  height: 100vh;
+  padding: 30px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 100px 1fr 1fr 150px;
+  grid-template-rows: 30px 1fr 30px;
+  grid-template-areas: "menu menu pageTitle contacts" "logo page page pagination" "socials . next next";
+}
+
+@media screen and (max-width: 780px) {
+  .App {
+    padding: 20px;
+    grid-template-columns: 200px 1fr 1fr 200px;
+    grid-template-rows: 40px 1fr 60px;
+    grid-template-areas: "menu logo logo contacts" "page page page page" "next socials socials pagination";
+  }
+}
+

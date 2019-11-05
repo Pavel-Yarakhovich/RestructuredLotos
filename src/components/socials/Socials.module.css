@@ -1,0 +1,27 @@
+.Socials {
+	display: flex;
+	align-items: center;
+	grid-area: socials;
+}
+
+.SocialsLink {
+	margin: 0;
+	margin-right: 20px;
+	text-decoration: none;
+	color: #000;
+	font-size: .8rem;
+}
+
+.SocialsLink:hover {
+	text-decoration: underline;
+}
+
+.SocialsLink:active {
+	color: #fff;
+}
+
+@media screen and (max-width: 780px) {
+	.Socials {
+		justify-content: center;
+	}
+}
