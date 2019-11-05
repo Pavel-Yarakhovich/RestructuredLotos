@@ -1,0 +1,43 @@
+.SideBar {
+	width: 250px;
+	align-items: flex-end;
+	border: 1px solid salmon;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	background: rgba(255, 255, 255, 0.199);
+	padding: 10px;
+	padding-left: 30px;
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: column;
+	position: fixed;
+	z-index: 100;
+	top: 60px;
+	left: 0;
+}
+
+.SideBarHidden {
+	display: none;
+}
+
+.SideBarInterim {
+	position: fixed;
+	z-index: 100;
+	top: 60px;
+	left: 0;
+}
+
+.MenuLink {
+	margin: 5px 0;
+	text-decoration: none;
+	color: #000;
+	font-size: .9rem;
+}
+
+.ActiveLink {
+	color: rgb(185, 77, 77);
+	text-decoration: none;
+	font-variant: small-caps;
+	font-weight: 700;
+	font-size: 1.1rem;
+}

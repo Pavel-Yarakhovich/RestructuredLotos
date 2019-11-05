@@ -6,3 +6,4 @@ export { Pagination } from './pagination/Pagination';
 export { Socials } from './socials/Socials';
 export { NextPageLink } from './nextPageLink/NextPageLink';
 export { OrderButton } from './orderButton/OrderButton';
+export { Sidebar } from './sidebar/Sidebar';

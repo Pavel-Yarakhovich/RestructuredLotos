@@ -44,3 +44,12 @@
 		overflow-x: visible;
 	}
 }
+
+@media screen and (max-width: 380px) {
+	.Page {
+		flex-flow: column;
+	}
+	.Img {
+		background-position-x: 50%;
+	}
+}

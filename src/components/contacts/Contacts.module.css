@@ -7,3 +7,9 @@
 	font-size: 1rem;
 	white-space: nowrap;
 }
+
+@media screen and (max-width: 380px) {
+	.Contacts {
+		display: none;
+	}
+}

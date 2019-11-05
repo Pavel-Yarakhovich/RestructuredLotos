@@ -56,3 +56,9 @@
 		right: 180px;
 	}
 }
+
+@media screen and (max-width: 380px) {
+	.LinkContainer {
+		display: none;
+	}
+}

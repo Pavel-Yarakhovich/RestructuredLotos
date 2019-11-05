@@ -1,6 +1,7 @@
 .Menu {
 	display: flex;
 	grid-area: menu;
+	position: relative;
 }
 
 .BurgerIcon {
