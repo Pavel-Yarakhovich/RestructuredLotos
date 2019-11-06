@@ -21,3 +21,14 @@
 		align-self: flex-start;
 	}
 }
+
+@media screen and (max-width: 380px) {
+	.LogoContainer {
+		justify-content: flex-end;
+	}
+	.Logo {
+		width: 30px;
+		height: 20px;
+		align-self: flex-start;
+	}
+}

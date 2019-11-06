@@ -1,0 +1,52 @@
+.Page {
+	display: flex;
+	justify-content: center;
+	grid-area: page;
+	position: relative;
+}
+
+.Img {
+	display: flex;
+	flex-flow: column;
+	flex-basis: 50%;
+	flex-shrink: 0;
+	padding-left: 100px;
+	box-sizing: border-box;
+	background: url(../../assets/img/img-2.png) no-repeat 90% 50%;
+	background-size: contain;
+}
+
+.PageContent {
+	flex-basis: 50%;
+	flex-shrink: 0;
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+}
+
+.Teachers {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@media screen and (max-width: 780px) {
+	.Page {
+		flex-flow: row-reverse;
+		overflow-x: visible;
+	}
+	.Img {
+		transform: scaleX(-1);
+		background-position-x: 50%;
+		overflow-x: visible;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.Page {
+		flex-flow: column;
+	}
+	.Img {
+		background-position-x: 50%;
+	}
+}

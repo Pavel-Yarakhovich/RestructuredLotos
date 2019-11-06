@@ -11,15 +11,33 @@
 	flex-flow: column;
 	justify-content: space-between;
 	margin-right: 10px;
+	cursor: pointer;
 }
 
 .BurgerIcon span {
 	width: 100%;
 	height: 4px;
 	background: salmon;
+	transition: all .1s ease;
+}
+
+.BurgerIcon:hover span {
+	background: red;
+}
+
+.BurgerIcon:active span {
+	transform: translateY(3px);
+	background: orchid;
 }
 
 .MenuText {
 	margin: 0;
 	padding: 0;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 380px) {
+	.MenuText {
+		display: none;
+	}
 }

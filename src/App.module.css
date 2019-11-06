@@ -18,7 +18,7 @@
   .App {
     padding: 20px;
     grid-template-columns: 200px 1fr 1fr 200px;
-    grid-template-rows: 40px 1fr 60px;
+    grid-template-rows: 30px 1fr 30px;
     grid-template-areas: "menu logo logo contacts" "page page page page" "next socials socials pagination";
   }
 }

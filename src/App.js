@@ -3,12 +3,12 @@ import { Switch, Route } from 'react-router-dom';
 import Transition from 'react-transition-group/Transition';
 import styles from './App.module.css';
 import { Logo, Contacts, Menu, PageTitle, Pagination, Socials, NextPageLink, Sidebar } from './components';
-import { PageOne } from './containers';
+import { PageOne, PageTwo } from './containers';
 
 const initialState = {
   pages: [
-    {title: 'Khhhhh'},
     {title: 'Добро пожаловать!'},
+    {title: 'Преподаватели'},
     {title: 'Добро пожаловать!'},
     {title: 'Добро пожаловать!'},
     {title: 'Добро пожаловать!'},
@@ -52,7 +52,7 @@ export const App = () => {
       <NextPageLink />
       <Switch>
         <Route exact path="/one" component={PageOne} />
-        <Route exact path="/two" component={PageOne} /> 
+        <Route exact path="/two" component={PageTwo} /> 
         <Route exact path="/three" component={PageOne} /> 
         <Route exact path="/four" component={PageOne} /> 
         <Route exact path="/five" component={PageOne} /> 

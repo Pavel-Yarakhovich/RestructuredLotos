@@ -8,11 +8,13 @@
 
 .CurrentPage {
 	font-size: 3rem;
+	margin: 0;
 	color: salmon;
 }
 
 .TotalPages {
 	font-size: 1.6rem;
+	margin: 0;
 	color: orange;
 	position: relative;
 }
@@ -28,6 +30,12 @@
 @media screen and (max-width: 780px) {
 	.Pagination {
 		justify-content: flex-end;
+	}
+	.CurrentPage {
+		line-height: 1;
+	}
+	.TotalPages {
+		line-height: 1;
 	}
 }
 
